@@ -3,7 +3,7 @@ package za.ac.cput.testdrivendevelopment;
 
 /**
  *
- * @author zelin
+ * @author zelino pestana 218325991
  */
 public class AddTwoNumbers {
     
