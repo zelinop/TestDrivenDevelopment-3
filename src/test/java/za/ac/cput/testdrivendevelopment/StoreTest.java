@@ -47,13 +47,18 @@ public class StoreTest {
     @Test
     public void testEquility() {
         assertEquals(store1, store3,store4);
-        System.out.prinltn("test equility is complete");
+        /** Khanyisele added this code to Ziyaad's code
+         *System.out.prinltn("test equility is complete");
+         */
     }
     //testing identity
     @Test
     public void testIdentity() {
         assertSame(store1,store3);
-        System.out.prinltn("test identity is complete");
+         /** Khanyisele added this code to Ziyaad's code
+         System.out.prinltn("test identity is complete");
+         */
+        
     }
     
     //fail testing
