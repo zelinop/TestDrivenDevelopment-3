@@ -48,6 +48,7 @@ public class AddTwoNumbersTest {
         AddTwoNumbers atn = new AddTwoNumbers (){};
         
         assertSame(10, atn.abc(5, 5));
+            System.out.prinltn("test identity is complete");
     }
         
     //Failing test
@@ -56,6 +57,7 @@ public class AddTwoNumbersTest {
     AddTwoNumbers atn = new AddTwoNumbers (){};
     
     assertEquals(10, atn.abc(5, 4));
+            System.out.prinltn("failing is complete");
     
     }
     //Timeout test for 5 seconds
