@@ -6,11 +6,10 @@
 package za.ac.cput.testdrivendevelopment;
 
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.Disabled;
 
 /**
@@ -18,21 +17,13 @@ import org.junit.jupiter.api.Disabled;
  * @author Aristoteles 218290276
  */
 public class calculatorTest {
-                     private calculator app1;
+    private calculator app1;
     private calculator app2;
     private calculator app3;
     public calculatorTest() {
     }
     
-    @BeforeAll
-    public static void setUpClass() {
-        
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
+
     @BeforeEach
     public void setUp() {
         this.app1 = new calculator();
@@ -82,5 +73,16 @@ public class calculatorTest {
        int results = app3.divide(100, 2);
        assertSame(50,results);
    }
+   
+     
+    @Timeout (2)
+    @Test
+    public void testWithTimeout(){
+       for (int i=0;i<10000;i++)
+       {
+           System.out.println(i);
+       }
+    }
+    
       
 }
