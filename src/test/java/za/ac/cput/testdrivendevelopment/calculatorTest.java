@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Disabled;
  * @author Aristoteles 218290276
  */
 public class calculatorTest {
-          private calculator app1;
+                     private calculator app1;
     private calculator app2;
     private calculator app3;
     public calculatorTest() {
@@ -62,25 +62,25 @@ public class calculatorTest {
     }
     @Test
     public void testAddition(){
-        int result = app1.addition(3,5);
+        int result = app1.addition(5,5);
         assertEquals(10, result);
     }
      @Test
     public void testSubtraction(){
-        int result = app2.subtract(3,5);
-        assertSame(8, result);
+        int result = app2.subtract(5,3);
+        assertSame(2, result);
     }
     
    @Test
    public void testDivide(){
-       int results = app3.divide(16, 2);
-       assertSame(app1,results);
+       int results = app3.divide(50,5);
+       assertSame(app1,app3);
    }
    @Disabled
     @Test
-   public void testDivi(){
-       int results = app3.divide(16, 2);
-       assertSame(app1,results);
+   public void testDiv(){
+       int results = app3.divide(100, 2);
+       assertSame(50,results);
    }
-    
+      
 }
